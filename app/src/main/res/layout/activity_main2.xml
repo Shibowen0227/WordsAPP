@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff808080"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/btput"
+        android:layout_width="480dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="90dp"
+        android:gravity="top"
+        android:hint="请输入单词：" />
+
+
+    <TextView
+        android:layout_width="480dp"
+        android:layout_height="120dp"
+        android:layout_marginRight="90dp"
+        android:id="@+id/view"
+        android:text="欢迎您进入翻译界面"
+        android:layout_alignTop="@+id/bttr"
+        android:layout_alignBottom="@+id/bttr" />
+
+
+    <Button
+        android:id="@+id/bttr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="翻译"
+        android:layout_below="@+id/btput"
+        android:layout_alignEnd="@+id/btr" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:id="@+id/btr"
+        android:layout_below="@+id/btput"
+        android:layout_toEndOf="@+id/btview" />
+
+    <WebView
+        android:id="@+id/btview"
+        android:layout_width="wrap_content"
+
+        android:layout_height="1000dp"
+        android:layout_alignLeft="@+id/btput"
+        android:layout_alignStart="@+id/btput"
+        android:layout_below="@+id/bttr"
+        android:layout_marginTop="32dp"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/view" />
+</RelativeLayout>

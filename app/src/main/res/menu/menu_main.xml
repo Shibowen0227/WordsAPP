@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.Shibunny.shi.bo.wen.wordsAPP.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="查询"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_insert"
+        android:orderInCategory="100"
+        android:title="插入"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_traslate"
+        android:orderInCategory="100"
+        android:title="翻译"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_we"
+        android:orderInCategory="100"
+        android:title="新闻"
+        app:showAsAction="never" />
+</menu>
